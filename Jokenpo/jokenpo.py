@@ -22,6 +22,8 @@ limpar='\033[m'
 
 #Tkinter
 app = Tk()
+app.title('Jokenpô')
+app.geometry('500x300')
 
 
 while vidas>0:
