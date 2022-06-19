@@ -4,13 +4,16 @@ from os import system
 from emoji import emojize
 from tkinter import *
 
+'''Código Não Pronto'''
+
 #variaveis
 vidas=1
 pc=''
 jokenpo=['PEDRA','PAPEL','TESOURA']
 errado=''
 emojivida=':red_heart:'
-pontos=0
+pontos=''
+Pedra=''
 
 #cores
 cred='\033[31m'
@@ -24,8 +27,18 @@ limpar='\033[m'
 app = Tk()
 app.title('Jokenpô')
 app.geometry('500x300')
+texto_funcao = Label(app, text='valor1')
+texto_funcao.grid(column=0, row=0, padx=10,pady=10)
+btn1= Button(app,text='PEDRA',command=Pedra)
+btn1.grid(column=0,row=1)
+btn2= Button(app,text='PAPEL',command=Pedra)
+btn2.grid(column=1,row=1)
+btn3= Button(app,text='TESOURA',command=Pedra)
+btn3.grid(column=2,row=1)
 
 
+def Pedra():
+    print('teste')
 while vidas>0:
     system('cls')
     print(emojize('{}{}{}Jokenpô Feito Por Danilo Santos {}{}  {} Vidas Restantes {}'.format(negrito,cblue,sublinhar,cred,emojivida,vidas,limpar)))
@@ -68,5 +81,6 @@ while vidas>0:
         system('cls')
         print('{}{}Voce Marcou {} Pontos{}'.format(negrito,cgreen,pontos,limpar))
         sleep (5)
+
 
 app.mainloop()
