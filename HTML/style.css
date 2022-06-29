@@ -1,7 +1,10 @@
 @charset "UTF-8";
-
+/*variavel global css*/
+*{
+}
 body{
-    background-color: #6039FA;
+    background-image: linear-gradient(to bottom, #4428B0, #6039FA,#917BE8);
+    background-attachment: fixed;
     font-family: Arial, Helvetica, sans-serif;
 }
 h1{
@@ -10,17 +13,24 @@ h1{
     color: #3517AD;
 }
 h2{
-    color: #3517AD;
+    color: #3E3563;
+    background-color: #AD9B05;
+    width: 300px;
 }
 
 h4{
     color: rgb(255, 255, 255);
+    text-align: left;
+    width: 400px;
 }
 
 video{
     width: 400px;
+    margin: auto;
 }
 
 p{
     color: rgb(255, 255, 255);
+    text-align: left;
+    width: 600px;
 }
