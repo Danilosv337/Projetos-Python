@@ -8,7 +8,6 @@ vidas=100
 pc=''
 jokenpo=['PEDRA','PAPEL','TESOURA']
 errado=''
-emojivida=':red_heart:'
 pontos=''
 escolha=''
 
