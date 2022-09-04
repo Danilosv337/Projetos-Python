@@ -1,6 +1,6 @@
 import urllib
 import requests
-key = 'key https://cutt.ly/'
+key = 'sua key https://cutt.ly/'
 
 URL = input('Digite o link que voce deseja encurtar...')
 NAME =  input('Digite Um nome personalizado para a URL')
